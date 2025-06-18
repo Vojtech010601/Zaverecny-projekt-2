@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrace</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/29e7547d12.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="register-page-body">
+    <div class="register-page-body-overlay"></div>
+    <nav class="navbar-register">
+      <div class="logo">
+        <img src="Podklady/netflix-logo.png" alt="Netflix Logo" />
+      </div>
+      <a href="index.html" class="btn btn-primary">Úvodní strana</a>
+    </nav>
+
+    <div class="register-form-container">
+      <form id="registrationForm" class="register-form">
+        <div class="form-group">
+          <input
+            type="text"
+            id="first-name"
+            name="firstName"
+            placeholder="Křestní jméno"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="last-name"
+            name="lastName"
+            placeholder="Příjmení"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="email"
+            id="reg-email"
+            name="email"
+            placeholder="Přihlašovací email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            id="reg-password"
+            name="password"
+            placeholder="Vaše heslo"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirmPassword"
+            placeholder="Heslo znovu"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary register-submit-btn">
+          Odeslat
+        </button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

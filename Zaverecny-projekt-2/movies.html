@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filmy kategorie</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/29e7547d12.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="movie-content-wrapper">
+      <a href="index.html" class="btn btn-primary back-to-home"
+        >Úvodní strana</a
+      >
+
+      <div class="category-selection">
+        <select id="movie-category-filter">
+          <option value="none">Vyberte možnost</option>
+          <option value="girl">Girl</option>
+          <option value="boy">Boy</option>
+          <option value="avengers">Avengers</option>
+          <option value="horror">Horror</option>
+        </select>
+      </div>
+    </div>
+
+    <section class="movie-grid-section">
+      <div class="container">
+        <div id="movie-grid" class="movie-grid"></div>
+      </div>
+    </section>
+
+    <div id="scroll-to-top" class="scroll-to-top">
+      <i class="fa-regular fa-circle-up"></i>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
